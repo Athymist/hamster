@@ -48,3 +48,7 @@
 
 			</header>
 			<!-- /header -->
+
+		</div>
+	</body>
+</html>
