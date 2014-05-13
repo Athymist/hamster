@@ -49,81 +49,66 @@ body { background: #0f243f none no-repeat scroll center top; }
 		.titre1 {font-style: italic; color: #FFB638; text-align: center; padding: 10%; }
 		.titre2 {font-style: italic; color: #FFBD4C; text-align: center; }
 
-/* code pour societe.html */
+/* Code pour societe.html */
 
-/* Supprime les styles appliqués par défaut aux listes. S'applique également à la sous-liste */
-.nav {
-    list-style: none none;
-    margin: 0;
-    padding: 0;
-    line-height: 1;
-    font-weight: bold;
-}
-.nav a {
-    display: block;
-    padding:.5em;
-    color: #0266d2;
-    background: #FFB638;
-    text-decoration: none;
-}
-.nav a:focus,
-.nav a:hover {
-    color: #0266d2;
-    background: #FFB638;
-    text-decoration: underline;
-}
-.nav-item {
-    float: left; /* Pour que les liens s’affichent horizontalement */
-    position: relative; /* Crée un contexte de positionnement pour les sous-listes */
-    width: 143px; /* espace les boutons du menu horizontal */
-    text-align: center;
-}
-.sub-nav {
-    position: absolute; /* Evite que la dimension du conteneur ne change quand la sous-liste est affichée */
-    white-space: nowrap; /* Pour que le texte ne revienne pas à la ligne */
-    left: 0; /* FIX IE7 : pour que le sous-menu s’aligne avec son conteneur */
-    top: 2em; /* FIX IE7 : pour que le sous-menu s’aligne avec son conteneur */
-    white-space: nowrap; /* Pour que le texte ne revienne pas à la ligne */
-    background: white; /* FIX IE7 : évite que la sous-liste ne disparaisse au moment où le curseur arrive au-dessus */
-    margin-top: 6px; /* Pour que le sous-menu recouvre son parent, facilitant le passage de la souris de l’un à l’autre */
-}
-/* Réduit cette boîte à un carré d’1px de côté, dont le texte est déporté loin à gauche */
-.sub-nav-item a {
-    position: absolute;
-    left: -10000px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    float: left; /* Fix WebKit : force la largeur des sous-navigations à s’adapter automatiquement, pour pouvoir l’atteindre à la souris */
-}
-.sub-nav-item a:focus,
-.nav-item a:focus +.sub-nav a,
-.nav-item:hover .sub-nav-item a {
-    position: static;
-    left: auto;
-    width: auto;
-    height: auto;
-    overflow: visible;
-}
-@media screen and (max-width: 480px) {
-.nav-item {
-        float: none; /* Remet les éléments les uns au-dessus des autres */
-    }
-.sub-nav {
-        position: static; /* Replace la sous-liste dans le flux du document */
-        white-space: normal; /* Permet au texte de revenir à la ligne normalement */
-    }
-.sub-nav-item a {
-        display: block; /* Pour que la ligne entière soit cliquable */
-        width: auto; /* Annule width: 1px */
-        height: auto; /* Annule height: 1px */
-        position: static; /* Annule position: absolute */
-        padding-left: 1em; /* Annule le padding vertical et en rajoute à gauche pour indiquer le sous-niveau */
-        overflow: visible; /* Annule overflow: hidden */
-        float: none;
-        text-align: center;
-    }
+.ribbon:after, .ribbon:before {
+    
+    margin-top:0.5em;
+    content: "";
+    float:left;
+    border:1.5em solid #fff;
 }
 
-/* Fin code societe.html */
+.ribbon:after {
+    border-right-color:transparent;
+}
+
+.ribbon:before {
+    border-left-color:transparent;
+}
+
+.ribbon a:link, .ribbon a:visited {
+    color:#000;
+    text-decoration:none;
+    float:left;
+    height:3.5em;
+    overflow:hidden;
+}
+
+.ribbon span {
+    background:#fff;
+    display:inline-block;
+    line-height:3em;
+    padding: 0 1em;
+    margin-top:0.5em;
+    position:relative;
+
+    -webkit-transition: background-color 0.2s, margin-top 0.2s;  /* Saf3.2+, Chrome */
+    -moz-transition: background-color 0.2s, margin-top 0.2s;  /* FF4+ */
+    -ms-transition: background-color 0.2s, margin-top 0.2s;  /* IE10 */
+    -o-transition: background-color 0.2s, margin-top 0.2s;  /* Opera 10.5+ */
+    transition: background-color 0.2s, margin-top 0.2s;
+}
+
+.ribbon a:hover span {
+    background:#FFD204;
+    margin-top:0;
+}
+
+.ribbon span:before {
+    content: "";
+    position:absolute;
+    top:3em;
+    left:0;
+    border-right:0.5em solid #9B8651;
+    border-bottom:0.5em solid #fff;
+}
+
+.ribbon span:after {
+    content: "";
+    position:absolute;
+    top:3em;
+    right:0;
+    border-left:0.5em solid #9B8651;
+    border-bottom:0.5em solid #fff;
+}

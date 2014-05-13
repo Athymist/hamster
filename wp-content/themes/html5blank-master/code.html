@@ -118,3 +118,183 @@
 		<span class="wb-stl-highlight">Special promotions</span>
 	</p>
 </div>
+
+Code de societe: menu
+<div id="wb_element_instance9" class="wb_element" style="left: 0px; top: 100px; width: 1001px; height: 60px; min-width: 1001px; min-height: 35px; z-index: 49;">
+	<div style="background: #e6a432; border: 0px solid #000000; opacity: 1; border-radius: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px; width: 1001px; height: 35px;">
+
+<ul id="menu-demo2">
+    <li><a href="#">Présentation</a>
+        <ul>
+            <li><a href="#">Société</a></li>
+            <li><a href="#">Horaires</a></li>
+            <li><a href="#">Tarifs</a></li>
+            <li><a href="#">Portfolio</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Bains</a>
+        <ul>
+            <li><a href="#">Romains</a></li>
+            <li><a href="#">Suédois</a></li>
+            <li><a href="#">Japonais</a></li>
+            <li><a href="#">Aquagym</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Soins</a>
+        <ul>
+            <li><a href="#">Méditation</a></li>
+            <li><a href="#">Massages</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Entraînement</a>
+        <ul>
+            <li><a href="#">Hamster-building</a></li>
+            <li><a href="#">Piscine olympique</a></li>
+            <li><a href="#">Sports de détente</a></li>
+            <li><a href="#">Préparation aux galas</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Restauration</a>
+        <ul>
+            <li><a href="#">Formules</a></li>
+            <li><a href="#">Choix de menus</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Hébergement</a>
+        <ul>
+            <li><a href="#">Petits prix</a></li>
+            <li><a href="#">Classe moyenne</a></li>
+            <li><a href="#">VIP</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Contacts</a>
+        <ul>
+            <li><a href="#">Devis</a></li>
+            <li><a href="#">Réservation</a></li>
+            <li><a href="#">Suivi de votre champion</a></li>
+        </ul>
+    </li>
+
+</ul>
+</div>
+</div>
+
+/* code pour societe.html */
+#menu-demo2, #menu-demo2 ul{
+padding:0;
+margin:0;
+list-style:none;
+text-align:center;
+}
+#menu-demo2 li{
+display:inline-block;
+position:relative;
+border-radius:8px 8px 0 0;
+}
+#menu-demo2 ul li{
+display:inherit;
+border-radius:0;
+}
+#menu-demo2 ul li:hover{
+border-radius:0;
+}
+#menu-demo2 ul li:last-child{
+border-radius:0 0 8px 8px;
+}
+#menu-demo2 ul{
+position:absolute;
+max-height:0;
+width:100%;
+overflow:hidden;
+-moz-transition: .8s all .3s;
+-webkit-transition: .8s all .3s;
+transition: .8s all .3s;
+}
+#menu-demo2 li:hover ul{
+max-height:15em;
+}
+/* background des liens menus */
+#menu-demo2 li:first-child{
+background-color: #65537A;
+background-image:-webkit-linear-gradient(top, #65537A 0%, #2A2333 100%);
+background-image:linear-gradient(to bottom, #65537A 0%, #2A2333 100%);
+}
+#menu-demo2 li:nth-child(2){
+background-color: #729EBF;
+background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+background-image:linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+}
+#menu-demo2 li:nth-child(3){
+background-color: #F6AD1A;
+background-image:-webkit-linear-gradient(top, #F6AD1A 0%, #9F391A 100%);
+background-image:linear-gradient(to bottom, #F6AD1A 0%, #9F391A 100%);
+}
+#menu-demo2 li:last-child{
+background-color: #CFFF6A;
+background-image:-webkit-linear-gradient(top, #CFFF6A 0%, #677F35 100%);
+background-image:linear-gradient(to bottom, #CFFF6A 0%, #677F35 100%);
+}
+/* background des liens sous menus */
+#menu-demo2 li:first-child li{
+background:#fff;
+}
+#menu-demo2 li:nth-child(2) li{
+background:#fff;
+}
+#menu-demo2 li:nth-child(3) li{
+background:#fff;
+}
+#menu-demo2 li:nth-child(4) li{
+background:#fff;
+}
+#menu-demo2 li:nth-child(5) li{
+background:#fff;
+}
+#menu-demo2 li:nth-child(6) li{
+background:#fff;
+}
+#menu-demo2 li:last-child li{
+background:#fff;
+}
+/* background des liens menus et sous menus au survol */
+#menu-demo2 li:first-child:hover, #menu-demo2 li:first-child li:hover{
+background:#65537A;
+}
+#menu-demo2 li:nth-child(2):hover, #menu-demo2 li:nth-child(2) li:hover{
+background:#729EBF;
+}
+#menu-demo2 li:nth-child(3):hover, #menu-demo2 li:nth-child(3) li:hover{
+background:#F6AD1A;
+}
+#menu-demo2 li:nth-child(4):hover, #menu-demo2 li:nth-child(4) li:hover{
+background:#F6AD1A;
+}
+#menu-demo2 li:nth-child(5):hover, #menu-demo2 li:nth-child(5) li:hover{
+background:#F6AD1A;
+}
+#menu-demo2 li:nth-child(6):hover, #menu-demo2 li:nth-child(6) li:hover{
+background:#F6AD1A;
+}
+#menu-demo2 li:last-child:hover, #menu-demo2 li:last-child li:hover{
+background:#CFFF6A;
+}
+/* les a href */
+#menu-demo2 a{
+text-decoration:none;
+display:block;
+padding:8px 32px;
+color:#fff;
+font-family:arial;
+}
+#menu-demo2 ul a{
+padding:8px 0;
+}
+#menu-demo2 li:hover li a{
+color:#fff;
+text-transform:inherit;
+}
+#menu-demo2 li:hover a, #menu-demo2 li li:hover a{
+color:#000;
+}
+
+/* Fin code societe.html */
